@@ -1,0 +1,61 @@
+.container{
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 45%;
+    margin: 0 auto;
+    z-index: 2;
+    &.top{
+
+        top: 5%;
+       
+    }
+
+     
+}
+
+
+ion-slides{
+
+    height: 100%;
+    .slide-inner{
+
+        width:75%;
+        margin-top: 50px;
+        color: #fff;
+        background-color:rgb(30, 120, 172);
+        border-radius: 10px;
+
+    ion-item{
+        --background: rgba(255,255,255,0.2);
+        --border-radius:10px;
+    
+    ion-input{
+
+        --color: #fff;
+    }
+    
+    
+    }    
+
+
+
+    } 
+
+
+}  
+.corpo{
+
+position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 45%;
+background: rgb(147, 194, 255);
+
+
+}
+
+
+    

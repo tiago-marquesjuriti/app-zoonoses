@@ -1,0 +1,104 @@
+<ion-content class="swiper-no-swiping">
+    <div class="container top" [hidden]="keyboard.isVisible">
+        <img src="/assets/img/logo.png">
+
+        <ion-segment (ionChange)="segmentChanged($event)" value="login">
+            <ion-segment-button value="login">
+                <ion-label>Login</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="register">
+                <ion-label>Cadastro</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+    </div>
+
+
+
+
+
+
+    <ion-slides>
+
+        <!--LOGIN-->
+
+        <ion-slide>
+
+            <div class="slide-inner  ion-padding">
+                <span>Login</span>
+
+                <ion-item class="ion-margin-top" lines="none">
+                    <ion-icon name='mail'>
+                    </ion-icon>
+
+                    <ion-input type="text" placeholder=" Email" [(ngModel)]="userLogin.email"></ion-input>
+
+                </ion-item>
+
+                <ion-item class="ion-margin-top" lines="none">
+                    <ion-icon name='lock'>
+                    </ion-icon>
+
+                    <ion-input type="password" placeholder=" Senha" [(ngModel)]="userLogin.password"></ion-input>
+
+                </ion-item>
+
+
+                <ion-button class="ion-margin-top" expand="block" color="light" (click)="login()">Entrar</ion-button>
+                
+            </div>
+        </ion-slide>
+        
+
+        <!--CADASTRO-->
+        <ion-slide>
+
+            <div class="slide-inner  ion-padding">
+                <span>Cadastro</span>
+
+                <ion-item class="ion-margin-top" lines="none">
+                    <ion-icon name='person'>
+                    </ion-icon>
+                    <ion-input type="text" placeholder=" Nome"></ion-input>
+
+                </ion-item>
+
+
+                <ion-item class="ion-margin-top" lines="none">
+                    <ion-icon name='mail'>
+                    </ion-icon>
+                    <ion-input type="text" placeholder=" E-mail" [(ngModel)]="userRegister.email"></ion-input>
+
+                </ion-item>
+
+                <ion-item class="ion-margin-top" lines="none">
+                    <ion-icon name='lock'>
+                    </ion-icon>
+                    <ion-input type="password" placeholder=" Senha" [(ngModel)]="userRegister.password"></ion-input>
+
+                </ion-item>
+
+
+
+                <ion-button class="ion-margin-top" expand="block" color="light" (click)="register()">Cadastrar
+                </ion-button>
+
+            </div>
+        </ion-slide>
+
+
+
+
+    </ion-slides>
+
+
+    <div class="corpo">
+
+        <div class="waves">
+        </div>
+
+
+    </div>
+
+
+
+</ion-content>

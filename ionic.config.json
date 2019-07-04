@@ -1,0 +1,7 @@
+{
+  "name": "ZoonosinhoApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

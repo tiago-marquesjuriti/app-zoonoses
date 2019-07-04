@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Leptospirose</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-list>
+
+    <ion-item>
+      <p>Vive em condições insalubre?</p>
+      <ion-select [(ngModel)]="dblepto.condicoes">
+        <ion-select-option value="Sim">Sim</ion-select-option>
+        <ion-select-option value="Nao">Não</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <p>Quantas pessoas pegaram leptospirose na sua região?</p>
+      <ion-select [(ngModel)]="dblepto.qnt">
+        <ion-select-option value="1">
+          <p>1</p>
+        </ion-select-option>
+        <ion-select-option value="2">
+          <p>2</p>
+        </ion-select-option>
+        <ion-select-option value="3">
+          <p>3</p>
+        </ion-select-option>
+        <ion-select-option value="4">
+          <p>4</p>
+        </ion-select-option>
+        <ion-select-option value="5">
+          <p>Mais de quatro</p>
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+    <ion-input [(ngModel)]="dblepto.agente"> 
+      <p>Ultima vez que o agente de<br> endemias passou na sua casa</p>
+      <ion-datetime displayFormat="DD / MM / YYYY"  placeholder="Data"></ion-datetime>
+    </ion-input>
+  </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="dblepto.description" placeholder="Descrição"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="dblepto.telefone" placeholder="Telefone"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="dblepto.rua" placeholder="Rua"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" [(ngModel)]="dblepto.bairro" placeholder="Bairro"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <ion-footer class="bottom">
+    <ion-toolbar>
+      <ion-button (click)="dbenviar()" expand="block">Enviar Denuncia</ion-button>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
+  
+
+
+
+ 
+
